@@ -1,4 +1,4 @@
-@import './variables.css';
+@import "./variables.css";
 
 * {
   margin: 0;
@@ -32,5 +32,57 @@ body {
 
 .main-section .code-section {
   flex: 0 0 45%;
-  background-color: var(--black);
+  background-color: var(--code-bg);
+}
+
+.main-section .code-section .code-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 50px;
+  padding: 0.75rem 1rem;
+  background-color: var(--dark-code-bg);
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.45);
+}
+
+.main-section .code-section .code-header .title {
+  font-size: 20px;
+  color: var(--white);
+}
+
+.main-section .code-section .code-header .title .title-icon {
+  font-size: 80%;
+  opacity: 0.35;
+  margin-right: 1rem;
+}
+
+.main-section .code-section .code-content {
+  padding: 2rem;
+}
+
+.main-section .code-section .code-content code {
+  font-family: monospace;
+  color: var(--white);
+  display: block;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.main-section .code-section .code-content .comment {
+  opacity: 0.5;
+}
+
+.main-section .code-section .code-content .comment .line-number {
+  opacity: 0.95;
+}
+
+.main-section .code-section .code-content code .line-number {
+  margin-right: 0.85rem;
+  font-weight: bold;
+  opacity: 0.45;
+}
+
+.main-section .code-section .code-content code var {
+  color: var(--var-text);
+  font-weight: bolder;
 }
