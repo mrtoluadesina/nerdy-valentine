@@ -6,8 +6,6 @@ $('#form').submit(e => {
   let from = $('#from').val();
   let body = $('#body').val();
 
-  console.log(to, from, body);
-
   $.ajax({
     type: 'POST',
     url: 'form/submit.php',
