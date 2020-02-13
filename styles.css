@@ -59,6 +59,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 2rem;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.45);
 }
 
 .main-section .code-section .code-content code {
@@ -96,4 +97,18 @@ body {
 
 .main-section .code-section .code-content code .import-var {
   color: var(--import-var);
+}
+
+.main-section .code-section .code-content code .console {
+  color: var(--console)
+}
+
+.main-section .code-section .code-content code .log {
+  color: var(--var-text)
+}
+
+.main-section .code-section .code-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
 }
