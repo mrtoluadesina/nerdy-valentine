@@ -1,6 +1,6 @@
 <?php
 
-require_once('db.class.php');
+require_once('../config/db.class.php');
 
 class Form extends Dbh {
     public function createCard($to, $from, $body) {
