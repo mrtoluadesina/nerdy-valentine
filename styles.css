@@ -112,3 +112,13 @@ body {
   flex-direction: column;
   padding: 2rem;
 }
+
+.main-section .code-section .code-footer .form-control {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0.5rem;
+}
+
+.main-section .code-section .code-footer .form-control {
+  
+}
