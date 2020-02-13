@@ -78,7 +78,7 @@ body {
 }
 
 .main-section .code-section .code-content code .line-number {
-  margin-right: 0.85rem;
+  margin-right: 0.9rem;
   font-weight: bold;
   opacity: 0.45;
 }
@@ -86,4 +86,8 @@ body {
 .main-section .code-section .code-content code var {
   color: var(--var-text);
   font-weight: bolder;
+}
+
+.main-section .code-section .code-content code .import-var {
+  color: var(--import-var);
 }
