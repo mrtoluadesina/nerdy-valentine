@@ -14,9 +14,9 @@ if(isset($_POST['submit'])) {
         $result = $form->createCard($to, $from, $body);
 
         if(!$result) {
-            header("Location: error.php");
+            return false;
         } else {
-            echo "Successfull";
+            return true;
         }
     }
 }
