@@ -1,0 +1,12 @@
+{
+    "name": "whitehox/nerdy-valentine",
+    "authors": [
+        {
+            "name": "whitehox",
+            "email": "oketegah@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^4.1"
+    }
+}
