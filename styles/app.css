@@ -107,6 +107,11 @@ body {
   color: var(--var-text)
 }
 
+.main-section .code-section .code-content code .code-input,
+.main-section .code-section .code-content code .code-input::placeholder {
+  color: var(--white);
+}
+
 .main-section .code-section .code-footer {
   display: flex;
   flex-direction: column;
