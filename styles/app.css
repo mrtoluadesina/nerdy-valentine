@@ -28,7 +28,9 @@ body {
 .main-section .content-section {
   flex: 0 0 55%;
 }
-
+.code-input {
+  font-family: monospace;
+}
 .main-section .code-section {
   flex: 0 0 45%;
   background-color: var(--code-bg);
@@ -241,7 +243,7 @@ body {
 .section-card-to {
   display: flex;
   flex-direction: column;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Pacifico', cursive;
   justify-content: center;
   align-items: center;
 }
@@ -261,7 +263,7 @@ body {
 .section-card-from {
   display: flex;
   flex-direction: column;
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Pacifico', cursive;
   justify-content: center;
   align-items: center;
   margin-top: 7px;
@@ -290,7 +292,7 @@ body {
 .section-card-body span {
   font-size: 1.2em;
   color: var(--messageHighlights);
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Pacifico', cursive;
 }
 
 .section-card-body p {
@@ -468,7 +470,7 @@ body {
   .section-card-to {
     display: flex;
     flex-direction: column;
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Pacifico', cursive;
     justify-content: center;
     align-items: center;
   }
