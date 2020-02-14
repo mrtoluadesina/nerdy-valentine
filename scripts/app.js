@@ -84,6 +84,8 @@ const picker = new EmojiButton();
 
 picker.on("emoji", emoji => {
   cardMessageBody.innerText += emoji;
+  messageFunc.value += emoji;
+  constMessageId.value += emoji;
 });
 
 emojiIcon.addEventListener("click", () => {
