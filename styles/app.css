@@ -328,7 +328,7 @@ body {
 }
 
 @media screen and (min-width: 426px) {
-  .main-section .code-section .code-content code.tab-1, 
+  .main-section .code-section .code-content code.tab-1,
   .main-section .code-section .code-content code.tab-2 {
     margin-left: 0;
   }
@@ -353,24 +353,23 @@ body {
     margin-top: 2em;
     margin-bottom: 2em;
   }
-  
+
   .section-card-to span {
     font-size: 1.5em;
     color: var(--messageHighlights);
   }
-  
+
   .section-card-to h1 {
     font-size: 2em;
     margin: 0 15px;
     color: var(--fontColor);
     text-transform: capitalize;
   }
-  
+
   .content-section-actions {
     display: flex;
     justify-content: space-between;
   }
-  
 }
 
 @media screen and (min-width: 600px) {
@@ -461,7 +460,7 @@ body {
     margin-top: 1.5em;
     padding: 10em 3rem;
   }
-  
+
   .section-card-to {
     display: flex;
     flex-direction: column;
@@ -469,12 +468,11 @@ body {
     justify-content: center;
     align-items: center;
   }
-  
+
   .section-card-to span {
     font-size: 1.5em;
     color: var(--messageHighlights);
   }
-  
 }
 
 @media screen and (min-width: 1200px) {
