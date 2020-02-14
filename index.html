@@ -7,6 +7,7 @@
     <link
       href="https://fonts.googleapis.com/css?family=Great+Vibes|Noto+Sans:400,700&display=swap"
       rel="stylesheet"
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./styles/app.css" />
   </head>
@@ -21,15 +22,15 @@
           <div class="content-section-card">
             <div class="section-card-to">
               <span>to</span>
-              <h1>felicia watson</h1>
+              <h1 id="section-card-to">felicia watson</h1>
             </div>
             <div class="section-card-from">
               <span>from</span>
-              <h3>jeanne stewart</h3>
+              <h3 id="section-card-from">jeanne stewart</h3>
             </div>
             <div class="section-card-body">
               <span>message</span>
-              <p>
+              <p id="section-card-message">
                 At vero eos et accusamus et iusto odio dignissimos ducimus qui
                 blanditiis praesentium voluptatum deleniti atque corrupti quos
                 dolores et quas molestias exceptur
@@ -69,11 +70,11 @@
           <code><span class="line-number">6</span> </code>
           <code
             ><span class="line-number">7</span> <var>const</var> nerdyCardId =
-            'xxxxxxxxxxxxx';</code
+            <span class="nerdyCardId">'xxxxxxxxxxxxx';</span></code
           >
           <code
             ><span class="line-number">8</span> <var>const</var> loveAuth =
-            'your_auth';</code
+            <span class="loveAuth">'your_auth';</span></code
           >
           <code
             ><span class="line-number">9</span> <var>const</var> love =
@@ -84,15 +85,15 @@
           <code class="tab-1"><span class="line-number tab-1">12</span>.create({</code>
           <code class="tab-2"
             ><span class="line-number tab-2">13</span>body:
-            <input type="text" class="code-input" placeholder="' '"
+            <input type="text" class="code-input message" placeholder="' '"
           /></code>
           <code class="tab-2"
             ><span class="line-number tab-2">14</span>from:
-            <input type="text" class="code-input" placeholder="' '"
+            <input type="text" class="code-input sender" placeholder="' '"
           /></code>
           <code class="tab-2"
             ><span class="line-number tab-2">15</span>to:
-            <input type="text" class="code-input" placeholder="' '"
+            <input type="text" class="code-input receiver" placeholder="' '"
           /></code>
           <code class="tab-1"><span class="line-number tab-1">16</span>})</code>
           <code class="tab-1"
@@ -111,15 +112,35 @@
         <div class="code-footer">
           <div class="form-control">
             <div class="form-group">
-              <input type="text" name="" id="" placeholder="To Nonso" />
+              <input
+                type="text"
+                name="sender"
+                id="sender"
+                placeholder="To Nonso"
+              />
             </div>
             <div class="form-group">
-              <input type="text" name="" id="" placeholder="From Taofiqat" />
+              <input
+                type="text"
+                name="receiver"
+                id="receiver"
+                placeholder="From Taofiqat"
+              />
             </div>
           </div>
           <div class="form-control">
             <div class="form-group single-form-group">
-              <textarea name="" rows="7" placeholder="Type Message"></textarea>
+              <textarea
+                name="message"
+                rows="7"
+                id="message"
+                placeholder="Type Message (NOTE Message is 160 characters)"
+                maxlength="160"
+              ></textarea>
+              <!-- <img
+                src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/smiling-face-with-smiling-eyes_1f60a.png"
+                id="emoji"
+              /> -->
             </div>
           </div>
           <div class="form-control justify-end">
@@ -131,7 +152,9 @@
       </div>
     </main>
     <script src="./scripts/jquery-3.4.1.min.js"></script>
-    <script src="./scripts/app.js"></script>
+    <script src="./scripts/dom-to-image.min.js"></script>
+    <script src="./scripts/emoji-button-2.8.0.min.js"></script>
     <script src="./scripts/submit.js"></script>
+    <script type="module" src="./scripts/app.js"></script>
   </body>
 </html>
