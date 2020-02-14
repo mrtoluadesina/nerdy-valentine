@@ -489,3 +489,21 @@ body {
     width: 80%;
   }
 }
+
+input,
+textarea {
+  color: var(--white);
+}
+
+.single-form-group {
+  position: relative;
+}
+
+#emoji {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+}
