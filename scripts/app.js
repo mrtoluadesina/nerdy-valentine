@@ -82,6 +82,10 @@ downloadNerdyCard.addEventListener("click", async () => {
 
 const picker = new EmojiButton();
 
-button.addEventListener("click", () => {
-  picker.pickerVisible ? picker.hidePicker() : picker.showPicker(button);
+picker.on("emoji", emoji => {
+  cardMessageBody.innerText += emoji;
+});
+
+emojiIcon.addEventListener("click", () => {
+  picker.pickerVisible ? picker.hidePicker() : picker.showPicker(emojiIcon);
 });
