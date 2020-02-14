@@ -1,19 +1,18 @@
 export const nerdyValUUID = () => {
-  return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function(c) {
-    const r = (Math.random() * 20) | 0,
+  return "xxxxxx-xxxx-4xxx-yxxx-xxxxxxxxx".replace(/[xy]/g, function(c) {
+    const r = (Math.random() * 16) | 0,
       v = c == "x" ? r : (r & 0x3) | 0x8;
     return v.toString(16);
   });
-  //.replace(/^.{3}/g, "DEC");
 };
 
 export const loveAuth = () => {
   const authHash = [
-    ...Array(5)
+    ...Array(3)
       .fill(0)
       .map(_ =>
         Math.random()
-          .toString(36)
+          .toString(16)
           .substring(2, 15)
       )
   ].join("-");
