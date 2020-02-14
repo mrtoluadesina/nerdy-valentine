@@ -182,6 +182,13 @@ body {
   opacity: 0.8;
 }
 
+@media screen and (min-width: 415px) {
+  .main-section .code-section .code-content code .line-number {
+    display: unset;
+    margin-right: 0.5rem; 
+  }
+}
+
 @media screen and (min-width: 769px) {
   .main-section {
     flex-direction: row;
@@ -209,7 +216,7 @@ body {
   }
 
   .main-section .code-section .code-content code .line-number {
-    display: flex;
+    margin-right: 1rem;
   }
 
   .main-section .code-section .code-footer {
