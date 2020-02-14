@@ -1,0 +1,63 @@
+:root {
+  --white: #ffffff;
+  --black: #111111;
+  --fontColor: #2d2f48;
+  --valentineColor: #f22f46;
+}
+
+.content-section {
+  display: flex;
+  justify-content: center;
+}
+
+.content-section-container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-section-logo {
+  text-transform: capitalize;
+  color: var(--fontColor);
+  padding: 4em 0;
+}
+
+.content-section-logo h3 {
+  font-size: 1.8em;
+}
+
+.content-section-logo span {
+  color: var(--valentineColor);
+}
+
+.content-section-card {
+  border: 1px black solid;
+  min-width: 100px;
+  min-height: 500px;
+  margin-top: 4em;
+  margin-bottom: 2em;
+}
+
+.content-section-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-actions-download,
+.section-actions-share {
+  text-transform: capitalize;
+  height: 40px;
+  width: 200px;
+  border-radius: 3px;
+  color: var(--white);
+  letter-spacing: 0.19px;
+  font-weight: 600;
+}
+
+.section-actions-download {
+  background-color: var(--fontColor);
+}
+
+.section-actions-share {
+  background-color: var(--valentineColor);
+}
