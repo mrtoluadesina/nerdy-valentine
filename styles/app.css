@@ -368,6 +368,28 @@ body {
   
 }
 
+@media screen and (min-width: 600px) {
+  .content-section {
+    padding: 0 2.5%;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .content-section {
+    padding: 0 5%;
+  }
+
+  .content-section-card {
+    padding: 7em;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .content-section-card {
+    padding: 10em 6rem;
+  }
+}
+
 @media screen and (min-width: 769px) {
   .main-section {
     flex-direction: row;
@@ -419,29 +441,20 @@ body {
   }
 
   .content-section-logo {
-    padding: 4em 0;
+    padding: 1em 0;
   }
 
   .content-section-logo h3 {
     font-size: 1.8em;
   }
 
+  .content-section-container {
+    padding: 0;
+  }
+
   .content-section-card {
-    width: 68%;
-    height: 60%;
-    margin-top: 3em;
-    margin-bottom: 2em;
-    background-image: url("../assets/card_bg.png");
-    background-size: 100% 100%;
-    background-position: cover;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-    padding-top: 10em;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-box-shadow: 0px 1px 9px -3px rgba(201, 197, 201, 0.2);
-    -moz-box-shadow: 0px 1px 9px -3px rgba(201, 197, 201, 0.2);
-    box-shadow: 0px 1px 9px -3px rgba(201, 197, 201, 0.2);
+    margin-top: 1.5em;
+    padding: 10em 3rem;
   }
   
   .section-card-to {
@@ -457,67 +470,19 @@ body {
     color: var(--messageHighlights);
   }
   
-  .section-card-to h1 {
-    font-size: 2em;
-    margin: 0 15px;
-    color: var(--fontColor);
-    text-transform: capitalize;
-  }
-  
-  .section-card-from {
-    display: flex;
-    flex-direction: column;
-    font-family: "Great Vibes", cursive;
-    justify-content: center;
-    align-items: center;
-    margin-top: 7px;
-  }
-  
-  .section-card-from h3 {
-    font-size: 1.2em;
-    margin: 0 15px;
-    color: var(--fontColor);
-    text-transform: capitalize;
-  }
-  
-  .section-card-from span {
-    font-size: 1.2em;
-    color: var(--messageHighlights);
-  }
-  
-  .section-card-body {
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .section-card-body span {
-    font-size: 1.2em;
-    color: var(--messageHighlights);
-    font-family: "Great Vibes", cursive;
-  }
-  
-  .section-card-body p {
-    font-size: 0.8em;
-    width: 70%;
-    color: var(--fontColor);
-    font-weight: 500;
-    text-align: center;
-  }
-  
-  .content-section-actions {
-    display: flex;
-    justify-content: space-between;
-    width: 68%;
-  }
-  
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .main-section .code-section .code-content code {
     font-size: 13px;
     line-height: 18px;
+  }
+
+  .content-section-logo {
+    padding: 3em 0 2rem;
+  }
+
+  .content-section-container {
+    width: 80%;
   }
 }
