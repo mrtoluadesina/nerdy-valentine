@@ -27,7 +27,6 @@ body {
 
 .main-section .content-section {
   flex: 0 0 55%;
-  background-color: var(--white);
 }
 
 .main-section .code-section {
@@ -100,11 +99,11 @@ body {
 }
 
 .main-section .code-section .code-content code .console {
-  color: var(--console)
+  color: var(--console);
 }
 
 .main-section .code-section .code-content code .log {
-  color: var(--var-text)
+  color: var(--var-text);
 }
 
 .main-section .code-section .code-content code .code-input,
@@ -135,12 +134,16 @@ body {
   flex: 0 0 45%;
 }
 
-.main-section .code-section .code-footer .form-control .form-group.single-form-group {
+.main-section
+  .code-section
+  .code-footer
+  .form-control
+  .form-group.single-form-group {
   flex: unset;
   width: 100%;
 }
 
-.main-section .code-section .code-footer .form-control .form-group input, 
+.main-section .code-section .code-footer .form-control .form-group input,
 .main-section .code-section .code-footer .form-control .form-group textarea {
   width: 100%;
   border-radius: 5px;
@@ -153,8 +156,18 @@ body {
   resize: none;
 }
 
-.main-section .code-section .code-footer .form-control .form-group input::placeholder,
-.main-section .code-section .code-footer .form-control .form-group textarea::placeholder {
+.main-section
+  .code-section
+  .code-footer
+  .form-control
+  .form-group
+  input::placeholder,
+.main-section
+  .code-section
+  .code-footer
+  .form-control
+  .form-group
+  textarea::placeholder {
   color: var(--white);
   opacity: 0.8;
 }
