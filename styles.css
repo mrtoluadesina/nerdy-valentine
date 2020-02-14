@@ -59,6 +59,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 2rem;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.45);
 }
 
 .main-section .code-section .code-content code {
@@ -78,12 +79,52 @@ body {
 }
 
 .main-section .code-section .code-content code .line-number {
-  margin-right: 0.85rem;
+  margin-right: 1rem;
   font-weight: bold;
   opacity: 0.45;
+}
+.main-section .code-section .code-content code .line-number.tab-1 {
+  margin-right: 3rem;
+}
+.main-section .code-section .code-content code .line-number.tab-2 {
+  margin-right: 5rem;
 }
 
 .main-section .code-section .code-content code var {
   color: var(--var-text);
   font-weight: bolder;
+}
+
+.main-section .code-section .code-content code .import-var {
+  color: var(--import-var);
+}
+
+.main-section .code-section .code-content code .console {
+  color: var(--console)
+}
+
+.main-section .code-section .code-content code .log {
+  color: var(--var-text)
+}
+
+.main-section .code-section .code-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.main-section .code-section .code-footer .form-control {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0.5rem;
+}
+
+.main-section .code-section .code-footer .form-control .form-group {
+  flex: 0 0 48.5%;
+}
+
+.main-section .code-section .code-footer .form-control .form-group input {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  padding: 0.45rem;
 }

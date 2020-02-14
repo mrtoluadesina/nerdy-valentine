@@ -34,18 +34,41 @@
           </h2>
         </div>
         <div class="code-content">
-          <code class="comment"><span class="line-number">1</span> // Use this function id you are a coder</code>
-          <code class="comment"
-            ><span class="line-number">2</span> // You will be able to edit here and the small form section
-            below</code
-          >
-          <code class="comment"><span class="line-number">3</span> // ENJOY!</code>
-          <code><span class="line-number">4</span> </code>
-          <code><span class="line-number">5</span> <var>const</var> nerdyCardId = 'xxxxxxxxxxxxx';</code>
-          <code><span class="line-number">6</span> <var>const</var> loveAuth = 'your_auth';</code>
-          <code><span class="line-number">7</span> <var>const</var> purpose = 'valentine';</code>
-          <code><span class="line-number">8</span> <var>const</var> purpose = 'valentine';</code>
-          <code><span class="line-number">9</span> </code>
+          <code><span class="line-number">1</span> <var class="import-var">import</var> nerdyValentine <var class="import-var">from</var> '@decagon/lib';</code>
+          <code><span class="line-number">2</span> </code>
+          <code class="comment"><span class="line-number">3</span> // Use this function if ou are a coder</code>
+          <code class="comment"><span class="line-number">4</span> // You will be able to edit here and the small form section below</code>
+          <code class="comment"><span class="line-number">5</span> // ENJOY!</code>
+          <code><span class="line-number">6</span> </code>
+          <code><span class="line-number">7</span> <var>const</var> nerdyCardId = 'xxxxxxxxxxxxx';</code>
+          <code><span class="line-number">8</span> <var>const</var> loveAuth = 'your_auth';</code>
+          <code><span class="line-number">9</span> <var>const</var> love = nerdyValentine(nerdyCardId, loveAuth);</code>
+          <code><span class="line-number">10</span> </code>
+          <code><span class="line-number">11</span>love.messages</code>
+          <code><span class="line-number tab-1">12</span>.create({</code>
+            <code><span class="line-number tab-2">13</span>body: ''</code>
+            <code><span class="line-number tab-2">14</span>from: ''</code>
+            <code><span class="line-number tab-2">15</span>to: ''</code>
+            <code><span class="line-number tab-1">16</span>})</code>
+            <code><span class="line-number tab-1">17</span>.then(message => <span class="console">console</span>.<span class="log">log</span>(message))</code>
+            <code><span class="line-number tab-1">18</span>.catch(error => <span class="console">console</span>.<span class="log">log</span>(error))</code>
+            <code><span class="line-number">19</span> </code>
+            <code><span class="line-number">20</span> </code>
+        </div>
+        <div class="code-footer">
+          <div class="form-control">
+            <div class="form-group">
+              <input type="text" name="" id="" placeholder="To Nonso">
+            </div>
+            <div class="form-group">
+              <input type="text" name="" id="" placeholder="From Nonso">
+            </div>
+          </div>
+          <div class="form-control">
+            <div class="form-group">
+              <textarea name="" id="" cols="30" rows="10" placeholder="Type Message"></textarea>
+            </div>
+          </div>
         </div>
       </div>
     </main>
