@@ -226,7 +226,7 @@ body {
   height: auto;
   margin-top: 1.5rem;
   margin-bottom: 2em;
-  background-image: url("../assets/card_bg.png");
+  background-image: url("../images/card_bg.png");
   background-size: 100% 100%;
   background-position: cover;
   background-repeat: no-repeat;
@@ -313,7 +313,7 @@ body {
   text-transform: capitalize;
   height: 40px;
   flex: 0.5;
-  border-radius: 3px;
+  border-radius: 1px;
   color: var(--white);
   letter-spacing: 0.19px;
   font-weight: 600;
