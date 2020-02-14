@@ -119,16 +119,21 @@ body {
 .main-section .code-section .code-footer {
   display: flex;
   flex-direction: column;
-  padding: 1.2rem 2rem;
+  padding: 1rem;
 }
 
 .main-section .code-section .code-footer .form-control {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 0.5rem;
+  padding: 0.5rem;
 }
+
+.main-section .code-section .code-footer .form-control.justify-end {
+  justify-content: flex-end;
+}
+
 .main-section .code-section .code-footer .form-control .img-wrapper {
-  width: 150px;
+  width: 80px;
 }
 
 .main-section .code-section .code-footer .form-control img {
@@ -147,15 +152,15 @@ body {
   flex: unset;
   width: 100%;
 }
-
 .main-section .code-section .code-footer .form-control .form-group input,
 .main-section .code-section .code-footer .form-control .form-group textarea {
   width: 100%;
   border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.45);
-  padding: 0.6rem;
-  font-size: 14px;
+  padding: 0.5rem;
+  font-size: 10px;
 }
+
 .main-section .code-section .code-footer .form-control .form-group textarea {
   width: 100%;
   resize: none;
@@ -205,5 +210,26 @@ body {
 
   .main-section .code-section .code-content code .line-number {
     display: flex;
+  }
+
+  .main-section .code-section .code-footer {
+    padding: 1.2rem 2rem;
+  }
+  .main-section .code-section .code-footer .form-control {
+    padding: 1rem 0.5rem;
+  }
+
+  .main-section .code-section .code-footer .form-control.justify-end {
+    justify-content: flex-start;
+  }
+
+  .main-section .code-section .code-footer .form-control .form-group input,
+  .main-section .code-section .code-footer .form-control .form-group textarea {
+    padding: 0.6rem;
+    font-size: 14px;
+  }
+
+  .main-section .code-section .code-footer .form-control .img-wrapper {
+    width: 150px;
   }
 }
